@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+	background-image: linear-gradient(to top left, #a000cc, #e380ff);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.bar {
+    overflow: hidden;
+    background-color: #a000cc;
+}
+.bar a {
+    float: left;
+    color: #f4ccff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.bar a:hover {
+    background-color: #3c004d;
+}
+.active {
+	background-color: #780099;
+	color: white;
+}

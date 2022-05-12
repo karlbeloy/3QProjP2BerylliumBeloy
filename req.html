@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>House-to-House Vaccination Form</title>
+		<script src="req.js"></script>
+		<link rel="stylesheet" type="text/css" href="req.css">
+		<link rel="stylesheet" type="text/css" href="bar.css">
+	</head>
+	<body>
+		<nav class="bar">
+			<a href="index.html">Home</a>
+			<a href="form.html">Registration Form</a>
+			<a href="sched.html">Schedule</a>
+        </nav><br>
+		
+		<div id="reqId">
+			<form class="reqform" id="reqform" onreset="" onsubmit="return reqSub();">
+				<fieldset form="reqform">
+					<legend>New Schedule:</legend>
+					
+					<textarea id="newTime" onblur="blurReq()" rows="4" cols="50"></textarea><br><br>
+					
+					<input type="submit" value="Submit">
+					
+					<input type="reset" value="Reset"><br><br>
+					
+					<a id="sched" href="sched.html">Schedule</a>
+				</fieldset>
+			</form><br>
+			
+			<h1 id="newTimeF"></h1>
+		</div>
+	</body>
+</html>

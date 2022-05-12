@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Registration Form</title>
+		<script src="form.js"></script>
+		<script src="schedGenerator.js"></script>
+		<link rel="stylesheet" type="text/css" href="form.css">
+		<link rel="stylesheet" type="text/css" href="bar.css">
+		<div id="redirStyle"></div>
+	</head>
+	
+	<body>
+		<nav class="bar">
+			<a href="index.html">Home</a>
+			<a class="active" href="form.html">Registration Form</a>
+			<a href="sched.html">Schedule</a>
+        </nav><br>
+		
+		<div id="regId">
+			<form class="regform" id="regform" onreset="reSet()" onsubmit="subMit(); return schedGenerator();">
+				<fieldset form="regform">
+					<legend>Registration Form:</legend>
+					
+					<label for="rName">Name:</label>
+					<input type="text" id="rName" onblur="blurRName()"><br><br>
+					
+					<label for="eMail">E-Mail Address:</label>
+					<input type="email" id="eMail" onblur="blurEMail()"><br><br>
+					
+					<label for="pNo">Phone Number:</label>
+					<input type="number" id="pNo" onblur="blurPNo()"><br><br>
+					
+					<label for="address">Address:</label>
+					<textarea id="address" onblur="blurAddress()" rows="4" cols="50"></textarea><br><br>
+					
+					<input type="submit" value="Submit">
+					
+					<input type="reset" value="Reset"><br><br>
+					
+					<a id="sched" href="sched.html">Schedule</a>
+				</fieldset>
+			</form><br>
+		
+			<div id="summary">
+				<h4 id="formResults"></h4>
+				<p id="rNameF"></p>
+				<p id="eMailF"></p>
+				<p id="pNoF"></p>
+				<p id="addressF"></p><br>
+				<h4 id="schedTitle"></h4>
+				<p id="schedTime"></p>
+				<div id="req"></div>
+			</div>
+		</div>
+	</body>
+</html>
